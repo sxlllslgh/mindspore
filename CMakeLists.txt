@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.14.0)
 project(MindSpore)
 
+set(CMAKE_CUDA_ARCHITECTURES "75;80;86;89;90")
+
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS 7.3.0)
         message(FATAL_ERROR "GCC version must be 7.3.0 and above, but found ${CMAKE_CXX_COMPILER_VERSION}")

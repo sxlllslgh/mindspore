@@ -17,6 +17,7 @@
 #include <cub/cub.cuh>
 #include <thrust/sequence.h>
 #include <thrust/device_ptr.h>
+#include <thrust/sort.h>
 #include "plugin/device/gpu/kernel/cuda_impl/cuda_ops/sparse_reorder_impl.cuh"
 #include "include/cuda_runtime.h"
 #include "include/cuda_fp16.h"
